@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!--Linking css, pages, and scripts-->
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="page.html">
+	<script src="script.js"></script>
+	<title>Adonis Pujols</title>
 </head>
 	<body>
-		<h1>Dat boi</h1>
-		<p>All Star Wars!</p>
-		<img src ="allstarwars.png">
+		<!--mouse makes image bigger/smaller -->
+		<img onmouseover="enlarge(this)" onmouseout="minimize(this)" src ="allstarwars.png" alt="Star Wars" width="200" height="200">
+		<!--Introduction-->
+		<h1 id="coolbutton">Mr. Random</h1>
+		<button type="button" onClick="changeSize()">Change size!</button>
+		<p>I am the randomest!</p>
+		<p>REMEMBER TO SOURCE THE SICK BEAT AND PIC!</p>
+			<a href="page.html">Just Random Stuff </a>
 	</body>
 </html>
