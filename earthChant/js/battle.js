@@ -327,7 +327,7 @@ factBox: function(){
 	this.factImage.anchor.set(0.5);
 	this.factImage.scale.setTo(.5,.5);
 	// Did you know? text
-	this.headerText = this.game.add.text(400, 25, 'Did you know?', this.headerStyle);
+	this.headerText = this.game.add.text(400, 75, 'Did you know?', this.headerStyle);
 	
 	// displaying fact related to enemy
 	this.info = this.game.add.text(600, 450, this.infoText, this.fact_style);  // TRY ADDING AN IMAGE OR SO
@@ -354,7 +354,7 @@ hideInfo: function(){
 
 create_infoBox: function(){
 	this.randInfo = this.game.rnd.integerInRange(0,this.infolist.length); //chooses random index from list using Phaser's randomint generator
-	this.infoBox = this.game.add.text(this.game.world.width-325, 75, 
+	this.infoBox = this.game.add.text(this.game.world.width-325, 50, 
 	'Did you know?\n' + this.infolist[this.randInfo]);
     this.infoBox.anchor.set(0.5);   // places infoBox at center
     //displays new info after set interval
